@@ -9,4 +9,5 @@ fun ByteArray.toShort() = foldIndexed(0) { i, result, byte ->
     result or (byte.toUByte().toInt() shl 8 * i)
 }.toShort()
 
+@Suppress("unused")
 fun ByteArray.toInt16() = toShort()

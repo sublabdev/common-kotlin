@@ -9,4 +9,5 @@ fun ByteArray.toInt() = foldIndexed(0) { i, result, byte ->
     result or (byte.toUByte().toInt() shl 8 * i)
 }
 
+@Suppress("unused")
 fun ByteArray.toInt32() = toInt()

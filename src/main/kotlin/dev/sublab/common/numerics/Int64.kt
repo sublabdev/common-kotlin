@@ -9,4 +9,5 @@ fun ByteArray.toLong() = foldIndexed(0L) { i, result, byte ->
     result or (byte.toUByte().toLong() shl 8 * i)
 }
 
+@Suppress("unused")
 fun ByteArray.toInt64() = toLong()
