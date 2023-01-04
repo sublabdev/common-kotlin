@@ -13,3 +13,5 @@ fun String.asByteArrayConvertible() = object : ByteArrayConvertible {
 fun ByteArray.asByteArrayConvertible() = object : ByteArrayConvertible {
     override fun toByteArray() = this@asByteArrayConvertible
 }
+
+abstract class FromByteArray(byteArray: ByteArray): ByteArrayConvertible
