@@ -1,4 +1,4 @@
-package dev.sublab.hex
+;package dev.sublab.hex
 
 import java.math.BigInteger
 
@@ -9,6 +9,9 @@ class StringHex(private val string: String) {
         string
     }
 
+    /**
+     * Returns ByteArray decoded from String
+     */
     fun decode(): ByteArray {
         val value = withoutPrefix()
 
@@ -19,8 +22,14 @@ class StringHex(private val string: String) {
             .toByteArray()
     }
 
+    /**
+     * Returns BigInteger from the String
+     */
     fun toBigInteger() = BigInteger(withoutPrefix(), 16)
 }
 
+/**
+ * String converter to ByteArray and BigInteger
+ */
 val String.hex
     get() = StringHex(this)
