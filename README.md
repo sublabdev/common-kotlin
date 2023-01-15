@@ -54,7 +54,7 @@ implementation 'dev.sublab:common-kotlin:1.0.0'
 
 ## Documentation
 
-- Wiki with examples: [https://github.com/sublabdev/common-kotlin/wiki](https://github.com/sublabdev/common-kotlin/wiki)
+- Our GitBook: [https://sublab.gitbook.io/docs/kotlin-libraries/common-library](https://sublab.gitbook.io/docs/kotlin-libraries/common-library)
 - API reference: [https://api-reference.sublab.dev/common-kotlin/](https://api-reference.sublab.dev/common-kotlin/)
 
 ## Contributing
@@ -63,7 +63,7 @@ Please look into our [contribution guide](CONTRIBUTING.md) and [code of conduct]
 
 ## Contacts
 
-- Website: [https://sublab.dev](https://sublab.dev)
+- Website: [sublab.dev](https://sublab.dev)
 - E-mail: [info@sublab.dev](mailto:info@sublab.dev)
 - Telegram support channel: [t.me/sublabsupport](t.me/sublabsupport)
-- Twitter: [https://twitter.com/sublabdev](https://twitter.com/sublabdev)
+- Twitter: [twitter.com/sublabdev](https://twitter.com/sublabdev)
