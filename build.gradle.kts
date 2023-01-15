@@ -19,10 +19,10 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    dokkaGfmPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:$dokkaVersion")
+    dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:$dokkaVersion")
 }
 
-tasks.dokkaGfm.configure {
+tasks.dokkaHtml.configure {
     outputDirectory.set(projectDir.resolve("reference"))
 }
 
