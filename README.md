@@ -54,7 +54,7 @@ implementation 'dev.sublab:common-kotlin:1.0.0'
 
 ## Documentation
 
-- Our GitBook: [https://sublab.gitbook.io/docs/kotlin-libraries/common-library](https://sublab.gitbook.io/docs/kotlin-libraries/common-library)
+- Our GitBook: [https://docs.sublab.dev/kotlin-libraries/common-library](https://docs.sublab.dev/kotlin-libraries/common-library)
 - API reference: [https://api-reference.sublab.dev/common-kotlin/](https://api-reference.sublab.dev/common-kotlin/)
 
 ## Contributing
