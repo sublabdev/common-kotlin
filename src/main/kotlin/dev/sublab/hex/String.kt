@@ -16,7 +16,7 @@
  * 
  */
 
-;package dev.sublab.hex
+package dev.sublab.hex
 
 import java.math.BigInteger
 

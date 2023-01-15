@@ -1,13 +1,16 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.21"
-    kotlin("plugin.serialization") version "1.7.21"
+    kotlin("jvm")
+    kotlin("plugin.serialization")
     `maven-publish`
+    id("org.jetbrains.dokka")
 }
 
 group = "dev.sublab"
 version = "1.0.0"
+
+val dokkaVersion: String by project
 
 repositories {
     mavenLocal()
@@ -16,6 +19,11 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    dokkaGfmPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:$dokkaVersion")
+}
+
+tasks.dokkaGfm.configure {
+    outputDirectory.set(projectDir.resolve("wiki/reference"))
 }
 
 tasks.test {
