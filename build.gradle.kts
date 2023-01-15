@@ -23,7 +23,7 @@ dependencies {
 }
 
 tasks.dokkaGfm.configure {
-    outputDirectory.set(projectDir.resolve("wiki/reference"))
+    outputDirectory.set(projectDir.resolve("reference"))
 }
 
 tasks.test {
