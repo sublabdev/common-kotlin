@@ -19,17 +19,17 @@
 package dev.sublab.common
 
 /**
- * An interface for converting object to ByteArray
+ * An interface for converting object to [ByteArray]
  */
 interface ByteArrayConvertible {
     /**
-     * Converts object to ByteArray
+     * Converts object to [ByteArray]
      */
     fun toByteArray(): ByteArray
 }
 
 /**
- * Converts String to ByteArray
+ * Converts [String] to [ByteArray]
  */
 @Suppress("unused")
 fun String.asByteArrayConvertible() = object : ByteArrayConvertible {

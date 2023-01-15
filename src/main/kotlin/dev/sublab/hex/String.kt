@@ -28,7 +28,7 @@ class StringHex(private val string: String) {
     }
 
     /**
-     * Returns ByteArray decoded from String
+     * Returns [ByteArray] decoded from [String]
      */
     fun decode(): ByteArray {
         val value = withoutPrefix()
@@ -41,13 +41,13 @@ class StringHex(private val string: String) {
     }
 
     /**
-     * Returns BigInteger from the String
+     * Returns [BigInteger] from the [String]
      */
     fun toBigInteger() = BigInteger(withoutPrefix(), 16)
 }
 
 /**
- * String converter to ByteArray and BigInteger
+ * String converter to [ByteArray] and [BigInteger]
  */
 val String.hex
     get() = StringHex(this)
