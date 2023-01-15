@@ -14,7 +14,9 @@
 
 # Sublab's Common Kotlin library
 
-A place where we store common components used by most of our libraries.
+This is a Kotlin repository which shares common functionality across most of our repositories which solve separate problems in Substrate ecosystem.
+
+So this is a good place to store new types that do not exist in Kotlin environment, but required for Substrate to work, such as Rust-specific types; some syntax sugar to enhance development speed and code readability; and different conversions between multiple types that happens frequently.
 
 ## Sublab
 
