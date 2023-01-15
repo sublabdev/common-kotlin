@@ -1,7 +1,7 @@
 <div align="center">
 
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://sublab.dev/logo.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://sublab.dev/logo_light.png">
     <img alt="Sublab logo" src="https://sublab.dev/logo.png">
   </picture>
 
