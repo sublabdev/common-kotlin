@@ -1,4 +1,3 @@
-import org.jetbrains.kotlin.gradle.plugin.extraProperties
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -26,12 +25,12 @@ dependencies {
     dokkaJavadocPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:$dokkaVersion")
 }
 
-tasks.dokkaHtml.configure {
-    outputDirectory.set(projectDir.resolve("reference"))
-}
-
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.dokkaHtml.configure {
+    outputDirectory.set(projectDir.resolve("reference"))
 }
 
 tasks.withType<KotlinCompile> {
